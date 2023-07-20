@@ -88,7 +88,7 @@ export class ScannerPage {
       tag => {
         this.tagim = tag;
         console.log("tag info JSON: " + JSON.stringify(this.tagim));
-        console.log("reader is success");
+        console.log("reading process is completed");
         this.NFCops();
       },
       err => console.log('Error reading tag', err)
