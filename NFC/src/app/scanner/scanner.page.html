@@ -1,0 +1,27 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+
+  <a  href="https://www.ku.edu.tr/">
+    <img width="200px; "  src="../../assets/ku_logo.png"></a>
+
+  <ion-card class="welcome-card" style="position:relative; top:20px">
+    <ion-card-header>
+        <ion-card-title>Capacitance nF</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <canvas #barChart></canvas>
+    </ion-card-content>
+</ion-card>
+<br>
+<div *ngFor= "let ffaa of data.reverse().slice(0,10)">
+  {{ffaa}}
+</div>
+
+
+    
+<ion-button style="--background: rgb(200,4,4); position: relative; top:150px; left: 80px; height: 90px; width: 230px; font-size: 30px; font-family: Arial, Helvetica, sans-serif;" (click)="goForward()">Save Data</ion-button>
+
+</ion-content>
